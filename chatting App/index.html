@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div><abbr title="User-1"><img src="./images/avatar-1.png" alt="user-1" class="cursor"></abbr></div>
+            <div class="center-div">
+                <span>Change Appearance</span>
+                <label class="switch">
+                    <input type="checkbox" onclick="darkMode()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div><abbr title="User-2"><img src="./images/avatar-2.png" alt="user-2" class="cursor"></abbr></div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="msg-box">
+            <div class="top-div">
+                <button class="switchUser-btn" onclick="switchUser()">Switch User</button>
+            </div>
+            <div class="btm-div">
+                <input type="text" id="user-text" placeholder="Enter Your Text">
+                <button onclick="sendMsg()">Send</button>
+            </div>
+        </section>
+
+        <section class="chat-screen">
+            <div class="top-div">
+                <button class="clear-btn" onclick="clearAll()">Clear All</button>
+                <div class="colors">
+                    <span id="dark" class="button"></span>
+                    <span id="lightgray" class="button"></span>
+                    <span id="pink" class="button"></span>
+                    <span id="orange" class="button"></span>
+                    <span class="button" id="default"></span>
+                </div>
+            </div>
+            <p class="error-para"></p>
+            <div class="chats-div"></div>
+        </section>
+
+        <section class="msg-box">
+            <div class="top-div">
+                <button class="switchUser-btn" onclick="switchUser()">Switch User</button>
+            </div>
+            <div class="btm-div">
+                <input type="text" id="user-text-two" placeholder="Enter Your Text">
+                <button onclick="sendMsgTwo()">Send</button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="script(enhanced version).js"></script>
+</body>
+
+</html>
